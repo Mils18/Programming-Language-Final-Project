@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/invoiceNumNewOrderSellerCardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INVOICE NUMBER" />
+
+    <TextView
+        android:id="@+id/BuyerNameTextViewNewOrderSellerCardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buyer Name :"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageViewNewOrderSellerCardView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@android:drawable/ic_menu_report_image" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="98dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/prodNameTextViewNewOrderSellerCardview"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="Product Name"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/totalPriceTextViewNewOrderSellerCardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rp. Total Price"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/quantityProdPriceNewOrderSellerCardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quantity @ prodprice"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/declineBtnNewOrder"
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Decline order" />
+
+        <Button
+            android:id="@+id/proceedBtnNewOrder"
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:text="Proceed Order" />
+    </LinearLayout>
+
+</LinearLayout>
